@@ -1,0 +1,46 @@
+# .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# MAUI / mobile build artifacts
+*.binlog
+*.apk
+*.aab
+*.ipa
+*.app/
+Platforms/Android/Resources/Resource.designer.cs
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+project.assets.json
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
