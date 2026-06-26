@@ -10,7 +10,6 @@ Plugin.NotesImporter/             # the library (MAUI class library, net10.0 + p
 Plugin.NotesImporter.Tests/       # xUnit test suite (30 tests)
 Plugin.NotesImporter.SampleApp/   # .NET MAUI sample app that drives the library
 docs/FORMATS.md            # how each export format is read
-.github/workflows/ci.yml   # builds on Windows + runs tests on Linux/Windows/macOS
 ```
 
 ## Why exports (and a native reader), not live APIs
@@ -119,9 +118,6 @@ it builds on Windows. To build its Windows target framework locally on a Windows
 dotnet workload install maui
 dotnet build Plugin.NotesImporter\Plugin.NotesImporter.csproj -f net10.0-windows10.0.19041.0
 ```
-
-The included GitHub Actions workflow (`.github/workflows/ci.yml`) builds the Windows target on a
-`windows-latest` runner on every push, and runs the test suite on Linux, Windows and macOS.
 
 ## Requirements
 

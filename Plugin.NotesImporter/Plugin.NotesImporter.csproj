@@ -10,6 +10,18 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
+        <!-- Package / assembly metadata -->
+        <PackageId>Plugin.NotesImporter</PackageId>
+        <Product>Plugin.NotesImporter</Product>
+        <Authors>Paul F. Johnson</Authors>
+        <Company>Paul F. Johnson</Company>
+        <Copyright>Copyright © 2026 Paul F. Johnson</Copyright>
+        <Version>1.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
@@ -20,6 +32,12 @@
 
     <ItemGroup>
         <InternalsVisibleTo Include="Plugin.NotesImporter.Tests" />
+    </ItemGroup>
+
+    <!-- Pack the licence and readme from the repository root. -->
+    <ItemGroup>
+        <None Include="../LICENSE" Pack="true" PackagePath="" Visible="false" />
+        <None Include="../README.md" Pack="true" PackagePath="" Visible="false" />
     </ItemGroup>
 
     <ItemGroup>
