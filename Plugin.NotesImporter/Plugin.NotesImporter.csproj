@@ -16,9 +16,14 @@
         <Authors>Paul F. Johnson</Authors>
         <Company>Paul F. Johnson</Company>
         <Copyright>Copyright © 2026 Paul F. Johnson</Copyright>
-        <Version>1.0.0</Version>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <FileVersion>1.0.0.0</FileVersion>
+        <Version>1.0.1</Version>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <FileVersion>1.0.1.0</FileVersion>
+        <Description>A .NET MAUI Library for importing notes from Apple Notes, OneNote and Google Keep</Description>
+        <PackageProjectUrl>https://github.com/nodoid/Plugin.NotesImporter</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nodoid/Plugin.NotesImporter</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
 
